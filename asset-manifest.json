@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/lbw-quiz/static/js/app.690134ee.chunk.js",
-    "app.js.map": "/lbw-quiz/static/js/app.690134ee.chunk.js.map",
+    "app.js": "/lbw-quiz/static/js/app.6f5e208d.chunk.js",
+    "app.js.map": "/lbw-quiz/static/js/app.6f5e208d.chunk.js.map",
     "runtime~app.js": "/lbw-quiz/static/js/runtime~app.47fb5915.js",
     "runtime~app.js.map": "/lbw-quiz/static/js/runtime~app.47fb5915.js.map",
-    "static/js/2.e1e9623e.chunk.js": "/lbw-quiz/static/js/2.e1e9623e.chunk.js",
-    "static/js/2.e1e9623e.chunk.js.map": "/lbw-quiz/static/js/2.e1e9623e.chunk.js.map",
+    "static/js/2.3dee5d28.chunk.js": "/lbw-quiz/static/js/2.3dee5d28.chunk.js",
+    "static/js/2.3dee5d28.chunk.js.map": "/lbw-quiz/static/js/2.3dee5d28.chunk.js.map",
     "fonts/Roboto-Regular.ttf": "/lbw-quiz/./fonts/Roboto-Regular.ttf",
     "favicon-16.png": "/lbw-quiz/favicon-16.png",
     "favicon-32.png": "/lbw-quiz/favicon-32.png",
@@ -13,11 +13,11 @@
     "index.html": "/lbw-quiz/index.html",
     "manifest.json": "/lbw-quiz/manifest.json",
     "serve.json": "/lbw-quiz/serve.json",
-    "static/js/2.e1e9623e.chunk.js.LICENSE.txt": "/lbw-quiz/static/js/2.e1e9623e.chunk.js.LICENSE.txt"
+    "static/js/2.3dee5d28.chunk.js.LICENSE.txt": "/lbw-quiz/static/js/2.3dee5d28.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.47fb5915.js",
-    "static/js/2.e1e9623e.chunk.js",
-    "static/js/app.690134ee.chunk.js"
+    "static/js/2.3dee5d28.chunk.js",
+    "static/js/app.6f5e208d.chunk.js"
   ]
 }
