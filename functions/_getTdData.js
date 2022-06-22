@@ -2,7 +2,7 @@ import * as RootNavigation from '../components/RootNavigation';
 
 export default async function getTdData(selectedAnswer) {
     try {
-      const response = await fetch('https://d847-2003-e3-b701-7703-ac50-89d7-d86c-710e.eu.ngrok.io/api/v1.0/question_and_phase');
+      const response = await fetch('https://d192-2003-e3-b701-7711-a022-47bd-76be-2175.eu.ngrok.io/api/v1.0/question_and_phase');
       if (!response.ok) {
         throw new Error(`HTTP error: ${response.status}`);
       }
