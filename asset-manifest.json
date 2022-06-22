@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/lbw-quiz/static/js/app.cc30f5ee.chunk.js",
-    "app.js.map": "/lbw-quiz/static/js/app.cc30f5ee.chunk.js.map",
+    "app.js": "/lbw-quiz/static/js/app.94b76176.chunk.js",
+    "app.js.map": "/lbw-quiz/static/js/app.94b76176.chunk.js.map",
     "runtime~app.js": "/lbw-quiz/static/js/runtime~app.47fb5915.js",
     "runtime~app.js.map": "/lbw-quiz/static/js/runtime~app.47fb5915.js.map",
     "static/js/2.3dee5d28.chunk.js": "/lbw-quiz/static/js/2.3dee5d28.chunk.js",
@@ -18,6 +18,6 @@
   "entrypoints": [
     "static/js/runtime~app.47fb5915.js",
     "static/js/2.3dee5d28.chunk.js",
-    "static/js/app.cc30f5ee.chunk.js"
+    "static/js/app.94b76176.chunk.js"
   ]
 }
