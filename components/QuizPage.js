@@ -9,39 +9,59 @@ import sendTdData from "../functions/_sendTdData";
 import { increasePlayed } from "../functions/_score";
 
 export default function QuizPage({ route, navigation }) {
-  const { index, timerCount, initialBtnState, phase } = route.params;
+  const { index, timerCount, initialBtnState, phase, initialActiveState } = route.params;
 
   const [buttonAEnabled, setButtonAEnabled] = React.useState(initialBtnState);
   const [buttonBEnabled, setButtonBEnabled] = React.useState(initialBtnState);
   const [buttonCEnabled, setButtonCEnabled] = React.useState(initialBtnState);
   const [buttonDEnabled, setButtonDEnabled] = React.useState(initialBtnState);
+  const [buttonAActive, setButtonAActive] = React.useState(initialActiveState);
+  const [buttonBActive, setButtonBActive] = React.useState(initialActiveState);
+  const [buttonCActive, setButtonCActive] = React.useState(initialActiveState);
+  const [buttonDActive, setButtonDActive] = React.useState(initialActiveState);
   const [answerSelectet, setAnswerSelected] = React.useState('');
   const [timerInterrupt, setTimerInterrupt] = React.useState(false);
 
   const selecting = (value) => {
     if (value == 'a') {
+      setButtonAEnabled(true);
       setButtonBEnabled(true);
       setButtonCEnabled(true);
       setButtonDEnabled(true);
       setAnswerSelected('a');
+      setButtonBActive(false);
+      setButtonCActive(false);
+      setButtonDActive(false);
     }
     else if (value == 'b') {
       setButtonAEnabled(true);
+      setButtonBEnabled(true);
       setButtonCEnabled(true);
       setButtonDEnabled(true);
       setAnswerSelected('b');
+      setButtonAActive(false);
+      setButtonCActive(false);
+      setButtonDActive(false);
     }
     else if (value == 'c') {
       setButtonAEnabled(true);
       setButtonBEnabled(true);
+      setButtonCEnabled(true);
       setButtonDEnabled(true);
       setAnswerSelected('c');
+      setButtonAActive(false);
+      setButtonBActive(false);
+      setButtonDActive(false);
     }
     else if (value == 'd') {
       setButtonAEnabled(true);
       setButtonBEnabled(true);
       setButtonCEnabled(true);
+      setButtonDEnabled(true);
       setAnswerSelected('d');
+      setButtonAActive(false);
+      setButtonBActive(false);
+      setButtonCActive(false);
     };
   }
 
@@ -91,6 +111,12 @@ export default function QuizPage({ route, navigation }) {
                 : item == 'b' ? buttonBEnabled
                   : item == 'c' ? buttonCEnabled
                     : buttonDEnabled
+            }
+            isActive={
+              item == 'a' ? buttonAActive
+                : item == 'b' ? buttonBActive
+                  : item == 'c' ? buttonCActive
+                    : buttonDActive
             }
             onPress={() => {selecting(item); sendTdData(index, item); increasePlayed();}}
           />

@@ -2,7 +2,7 @@ import * as RootNavigation from '../components/RootNavigation';
 
 export default async function getTdData(selectedAnswer) {
     try {
-      const response = await fetch('https://d192-2003-e3-b701-7711-a022-47bd-76be-2175.eu.ngrok.io/api/v1.0/question_and_phase');
+      const response = await fetch('https://d7a0-141-22-50-46.eu.ngrok.io/api/v1.0/question_and_phase');
       if (!response.ok) {
         throw new Error(`HTTP error: ${response.status}`);
       }
@@ -14,7 +14,8 @@ export default async function getTdData(selectedAnswer) {
           index: data.question-1,
           timerCount: data.ms_to_phase_end,
           initialBtnState: false,
-          phase: data.phase
+          phase: data.phase,
+          initialActiveState: true
         });
       } else if (data.phase == 2) {
         RootNavigation.push('Infos', {
